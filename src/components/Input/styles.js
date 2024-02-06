@@ -2,8 +2,8 @@ import styled, { css } from "styled-components";
 
 export const InputContainer = styled.div`
     width: 100%;
-    height: 75px;
     background-color: #AAFFAA;
+
 
     display: flex;
     align-items: center;
@@ -19,13 +19,18 @@ export const InputContainer = styled.div`
         orientation: initial;
         direction: ltr;
         text-align: right;
-        
+        margin-right: 20px;
+
         font-size: 60px;
         font-family:  'Roboto';
         color: #FFFFFF;
     }
     .extra {
         color: #558055;
+    }
+    .subinput {
+        font-size: 24px;
+        height: 24px;
     }
 
 `
