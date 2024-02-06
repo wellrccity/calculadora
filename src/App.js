@@ -44,8 +44,11 @@ const App = () => {
     const equation = currentNumber.replaceAll('x', '*').replaceAll('÷', '/').replaceAll('√', 'Math.sqrt');
     const result = String(eval(equation+parenthesis));
     const lenght = result.length
-    const maxlenght = lenght-11
-    const limitResult = result.slice(0, -maxlenght);
+    if(lenght > 11){
+      const maxlenght = lenght-11
+      const limitResult = result.slice(0, -maxlenght);
+    }
+    
     setResultNumber(eval(limitResult));
   }
 
